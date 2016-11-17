@@ -15,22 +15,6 @@ setup(
     download_url='https://github.com/wjakob/pybind11/tarball/v' + __version__,
     packages=['pybind11'],
     license='BSD',
-    headers=[
-        'include/pybind11/attr.h',
-        'include/pybind11/cast.h',
-        'include/pybind11/complex.h',
-        'include/pybind11/descr.h',
-        'include/pybind11/eigen.h',
-        'include/pybind11/numpy.h',
-        'include/pybind11/pybind11.h',
-        'include/pybind11/stl.h',
-        'include/pybind11/stl_bind.h',
-        'include/pybind11/common.h',
-        'include/pybind11/functional.h',
-        'include/pybind11/operators.h',
-        'include/pybind11/pytypes.h',
-        'include/pybind11/typeid.h'
-    ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',

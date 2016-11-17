@@ -1,0 +1,52 @@
+From: Ghislain Antony Vaillant <ghisvail@gmail.com>
+Date: Thu, 17 Nov 2016 16:34:09 +0000
+Subject: Use system include path.
+
+---
+ pybind11/__init__.py |  8 +-------
+ setup.py             | 16 ----------------
+ 2 files changed, 1 insertion(+), 23 deletions(-)
+
+diff --git a/pybind11/__init__.py b/pybind11/__init__.py
+index dc0ddf6..21eab24 100644
+--- a/pybind11/__init__.py
++++ b/pybind11/__init__.py
+@@ -2,10 +2,4 @@ from ._version import version_info, __version__
+ 
+ 
+ def get_include(*args, **kwargs):
+-    import os
+-    try:
+-        from pip import locations
+-        return os.path.dirname(
+-            locations.distutils_scheme('pybind11', *args, **kwargs)['headers'])
+-    except ImportError:
+-        return 'include'
++    return '/usr/include'
+diff --git a/setup.py b/setup.py
+index 07465bb..0b9d7f4 100644
+--- a/setup.py
++++ b/setup.py
+@@ -15,22 +15,6 @@ setup(
+     download_url='https://github.com/wjakob/pybind11/tarball/v' + __version__,
+     packages=['pybind11'],
+     license='BSD',
+-    headers=[
+-        'include/pybind11/attr.h',
+-        'include/pybind11/cast.h',
+-        'include/pybind11/complex.h',
+-        'include/pybind11/descr.h',
+-        'include/pybind11/eigen.h',
+-        'include/pybind11/numpy.h',
+-        'include/pybind11/pybind11.h',
+-        'include/pybind11/stl.h',
+-        'include/pybind11/stl_bind.h',
+-        'include/pybind11/common.h',
+-        'include/pybind11/functional.h',
+-        'include/pybind11/operators.h',
+-        'include/pybind11/pytypes.h',
+-        'include/pybind11/typeid.h'
+-    ],
+     classifiers=[
+         'Development Status :: 5 - Production/Stable',
+         'Intended Audience :: Developers',

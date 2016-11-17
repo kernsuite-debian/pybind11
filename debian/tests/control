@@ -1,0 +1,15 @@
+Test-Command: c++ -shared -fPIC `python-config --cflags --ldflags` -o $AUTOPKGTEST_TMP/example.so ./debian/tests/example.cpp
+ ; PYTHONPATH=$AUTOPKGTEST_TMP python -c "import example; assert(example.add(1, 2) == 3)"
+Depends: g++ | c++-compiler, pybind11-dev, python-dev
+Restrictions: allow-stderr
+
+Test-Command: c++ -shared -fPIC `python3-config --cflags --ldflags` -o $AUTOPKGTEST_TMP/example.so ./debian/tests/example.cpp 
+ ; PYTHONPATH=$AUTOPKGTEST_TMP python3 -c "import example; assert(example.add(1, 2) == 3)"
+Depends: g++ | c++-compiler, pybind11-dev, python3-dev
+Restrictions: allow-stderr
+
+Test-Command: python -c "import pybind11; print pybind11.get_include()"
+Depends: python-pybind11
+
+Test-Command: python3 -c "import pybind11; print(pybind11.get_include())"
+Depends: python3-pybind11

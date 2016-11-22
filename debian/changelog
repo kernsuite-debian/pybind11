@@ -1,5 +1,5 @@
-pybind11 (1.8.1-1) UNRELEASED; urgency=low
+pybind11 (1.8.1-1) unstable; urgency=low
 
   * Initial release. (Closes: #844597)
 
- -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 17 Nov 2016 10:22:18 +0000
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Tue, 22 Nov 2016 11:43:53 +0000

@@ -12,11 +12,12 @@ override_dh_auto_clean:
 	dh_auto_clean
 	dh_auto_clean --buildsystem=pybuild
 
+override_dh_auto_build: export http_proxy=127.0.0.1:9
+override_dh_auto_build: export https_proxy=127.0.0.1:9
 override_dh_auto_build:
 	dh_auto_build
 	dh_auto_build --buildsystem=pybuild
-	PYTHONPATH=. http_proxy='127.0.0.1:9' \
-		   sphinx-build -N -b html docs build/html
+	PYTHONPATH=. sphinx-build -N -b html docs build/html
 
 override_dh_auto_install:
 	dh_auto_install

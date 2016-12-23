@@ -1,3 +1,13 @@
+pybind11 (2.0.0~rc1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Switch to git-dpm
+  * Refresh patch queue
+  * Add build dependency on pytest
+  * Update HTTP proxy setup to the latest guidelines
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Fri, 23 Dec 2016 16:39:46 +0000
+
 pybind11 (1.8.1-2) unstable; urgency=medium
 
   * Fixup the source package maintainer and uploaders.

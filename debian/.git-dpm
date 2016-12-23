@@ -2,10 +2,10 @@
 c775881fbf92234cefbe34ad5a62726fedbd3557
 c775881fbf92234cefbe34ad5a62726fedbd3557
 6b567a7029dee46377c99503a97a39dbe06abfd1
-6b567a7029dee46377c99503a97a39dbe06abfd1
-pybind11_1.8.1.orig.tar.gz
-1655fd096b3abdce8ad7c7e3a27578c400698eff
-300379
+90da4af1ff3a4abbd4b647f2d8fa58a23972d210
+pybind11_2.0.0~rc1.orig.tar.gz
+48ccff5dc81bb37a225cea3f6143e79ecb35b7aa
+397840
 debianTag="debian/%e%v"
 patchedTag="patched/%e%v"
 upstreamTag="upstream/%e%u"

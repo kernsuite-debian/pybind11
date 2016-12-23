@@ -1,18 +1,18 @@
-From c775881fbf92234cefbe34ad5a62726fedbd3557 Mon Sep 17 00:00:00 2001
+From 473b9c87f534623580a1d2bb1d887133bf9da8cc Mon Sep 17 00:00:00 2001
 From: Ghislain Antony Vaillant <ghisvail@gmail.com>
-Date: Thu, 17 Nov 2016 16:34:09 +0000
-Subject: Use system include path.
+Date: Fri, 23 Dec 2016 16:31:56 +0000
+Subject: Use system include path
 
 ---
  pybind11/__init__.py |  8 +-------
- setup.py             | 16 ----------------
- 2 files changed, 1 insertion(+), 23 deletions(-)
+ setup.py             | 19 -------------------
+ 2 files changed, 1 insertion(+), 26 deletions(-)
 
 diff --git a/pybind11/__init__.py b/pybind11/__init__.py
-index dc0ddf6..21eab24 100644
+index a765692..a7d57c3 100644
 --- a/pybind11/__init__.py
 +++ b/pybind11/__init__.py
-@@ -2,10 +2,4 @@ from ._version import version_info, __version__
+@@ -2,10 +2,4 @@ from ._version import version_info, __version__  # noqa: F401 imported but unuse
  
  
  def get_include(*args, **kwargs):
@@ -25,28 +25,31 @@ index dc0ddf6..21eab24 100644
 -        return 'include'
 +    return '/usr/include'
 diff --git a/setup.py b/setup.py
-index 07465bb..0b9d7f4 100644
+index e9bc3c3..30cfb02 100644
 --- a/setup.py
 +++ b/setup.py
-@@ -15,22 +15,6 @@ setup(
+@@ -15,25 +15,6 @@ setup(
      download_url='https://github.com/wjakob/pybind11/tarball/v' + __version__,
      packages=['pybind11'],
      license='BSD',
 -    headers=[
 -        'include/pybind11/attr.h',
 -        'include/pybind11/cast.h',
+-        'include/pybind11/chrono.h',
+-        'include/pybind11/common.h',
 -        'include/pybind11/complex.h',
 -        'include/pybind11/descr.h',
 -        'include/pybind11/eigen.h',
+-        'include/pybind11/eval.h',
+-        'include/pybind11/functional.h',
 -        'include/pybind11/numpy.h',
+-        'include/pybind11/operators.h',
+-        'include/pybind11/options.h',
 -        'include/pybind11/pybind11.h',
+-        'include/pybind11/pytypes.h',
 -        'include/pybind11/stl.h',
 -        'include/pybind11/stl_bind.h',
--        'include/pybind11/common.h',
--        'include/pybind11/functional.h',
--        'include/pybind11/operators.h',
--        'include/pybind11/pytypes.h',
--        'include/pybind11/typeid.h'
+-        'include/pybind11/typeid.h',
 -    ],
      classifiers=[
          'Development Status :: 5 - Production/Stable',

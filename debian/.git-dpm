@@ -6,3 +6,6 @@ c775881fbf92234cefbe34ad5a62726fedbd3557
 pybind11_1.8.1.orig.tar.gz
 1655fd096b3abdce8ad7c7e3a27578c400698eff
 300379
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"

@@ -4,6 +4,7 @@
 
 [![Documentation Status](https://readthedocs.org/projects/pybind11/badge/?version=master)](http://pybind11.readthedocs.org/en/master/?badge=master)
 [![Documentation Status](https://readthedocs.org/projects/pybind11/badge/?version=stable)](http://pybind11.readthedocs.org/en/stable/?badge=stable)
+[![Gitter chat](https://img.shields.io/gitter/room/gitterHQ/gitter.svg)](https://gitter.im/pybind/Lobby)
 [![Build Status](https://travis-ci.org/pybind/pybind11.svg?branch=master)](https://travis-ci.org/pybind/pybind11)
 [![Build status](https://ci.appveyor.com/api/projects/status/riaj54pn4h08xy40?svg=true)](https://ci.appveyor.com/project/wjakob/pybind11)
 
@@ -24,12 +25,12 @@ become an excessively large and unnecessary dependency.
 
 Think of this library as a tiny self-contained version of Boost.Python with
 everything stripped away that isn't relevant for binding generation. Without
-comments, the core header files only require ~2.5K lines of code and depend on
-Python (2.7 or 3.x, or PyPy2.7 >= 5.7) and the C++ standard library. This compact implementation
-was possible thanks to some of the new C++11 language features (specifically:
-tuples, lambda functions and variadic templates). Since its creation, this
-library has grown beyond Boost.Python in many ways, leading to dramatically
-simpler binding code in many common situations.
+comments, the core header files only require ~4K lines of code and depend on
+Python (2.7 or 3.x, or PyPy2.7 >= 5.7) and the C++ standard library. This
+compact implementation was possible thanks to some of the new C++11 language
+features (specifically: tuples, lambda functions and variadic templates). Since
+its creation, this library has grown beyond Boost.Python in many ways, leading
+to dramatically simpler binding code in many common situations.
 
 Tutorial and reference documentation is provided at
 [http://pybind11.readthedocs.org/en/master](http://pybind11.readthedocs.org/en/master).
@@ -96,7 +97,7 @@ In addition to the core functionality, pybind11 provides some extra goodies:
 ## Supported compilers
 
 1. Clang/LLVM (any non-ancient version with C++11 support)
-2. GCC (any non-ancient version with C++11 support)
+2. GCC 4.8 or newer
 3. Microsoft Visual Studio 2015 or newer
 4. Intel C++ compiler 16 or newer (15 with a [workaround](https://github.com/pybind/pybind11/issues/276))
 5. Cygwin/GCC (tested on 2.5.1)

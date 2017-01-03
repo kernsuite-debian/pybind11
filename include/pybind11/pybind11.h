@@ -701,7 +701,7 @@ protected:
 
 #if PY_MAJOR_VERSION >= 3 && PY_MINOR_VERSION >= 3
             /* Qualified names for Python >= 3.3 */
-            type->ht_qualname = ht_qualname.release().ptr();
+            type->ht_qualname = ht_qualname_meta.release().ptr();
 #endif
             type->ht_type.tp_name = strdup(meta_name_.c_str());
             type->ht_type.tp_base = &PyType_Type;
@@ -785,6 +785,11 @@ protected:
 
         /* Support dynamic attributes */
         if (rec->dynamic_attr) {
+            #if defined(PYPY_VERSION)
+                pybind11_fail(std::string(rec->name) + ": dynamic attributes are "
+                                                       "currently not supported in "
+                                                       "conunction with PyPy!");
+            #endif
             type->ht_type.tp_flags |= Py_TPFLAGS_HAVE_GC;
             type->ht_type.tp_dictoffset = type->ht_type.tp_basicsize; // place the dict at the end
             type->ht_type.tp_basicsize += sizeof(PyObject *); // and allocate enough space for it

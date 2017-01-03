@@ -1,3 +1,19 @@
+pybind11 (2.0.0-1) unstable; urgency=medium
+
+  * Remove gbp configuration in favor of git-dpm
+  * Mangle upstream development versions
+  * New upstream release
+  * Add support for the nocheck build profile
+    - Add versioned dependency on dpkg-dev
+    - Mark build dependencies specific to testing as !nocheck
+    - Do not build the test suite if nocheck is requested
+  * Add support for the nodoc build profile
+    - Mark build dependencies specific to the documentation as !nodoc
+    - Add build dependency on sphinx-common for dh_sphinxdoc
+    - Do not build the documentation if nodoc is requested
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Tue, 03 Jan 2017 15:44:46 +0000
+
 pybind11 (2.0.0~rc1-1) unstable; urgency=medium
 
   * New upstream release

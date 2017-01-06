@@ -1,3 +1,9 @@
+pybind11 (2.0.1-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Fri, 06 Jan 2017 19:19:20 +0000
+
 pybind11 (2.0.0-1) unstable; urgency=medium
 
   * Remove gbp configuration in favor of git-dpm

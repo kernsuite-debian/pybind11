@@ -1,4 +1,4 @@
-From bd7aedc94c32b273571944910199964d7f7535dc Mon Sep 17 00:00:00 2001
+From c2010fb61826c45bdd0ee6f36c17d7bf84d8daaf Mon Sep 17 00:00:00 2001
 From: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Date: Fri, 23 Dec 2016 16:31:56 +0000
 Subject: Use system include path
@@ -25,7 +25,7 @@ index a765692..a7d57c3 100644
 -        return 'include'
 +    return '/usr/include'
 diff --git a/setup.py b/setup.py
-index e9bc3c3..30cfb02 100644
+index a25f1af..29eeb34 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -15,25 +15,6 @@ setup(
@@ -49,7 +49,7 @@ index e9bc3c3..30cfb02 100644
 -        'include/pybind11/pytypes.h',
 -        'include/pybind11/stl.h',
 -        'include/pybind11/stl_bind.h',
--        'include/pybind11/typeid.h',
+-        'include/pybind11/typeid.h'
 -    ],
      classifiers=[
          'Development Status :: 5 - Production/Stable',

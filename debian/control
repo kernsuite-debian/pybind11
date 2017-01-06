@@ -28,9 +28,9 @@ Package: pybind11-dev
 Architecture: all
 Multi-Arch: foreign
 Section: libdevel
-Depends: ${misc:Depends},
+Depends: ${misc:Depends}
 Suggests: libeigen3-dev,
-          pybind11-doc <!nodoc>,
+          pybind11-doc <!nodoc>
 Description: seamless operability between C++11 and Python
  pybind11 is a lightweight header library that exposes C++ types in
  Python and vice versa, mainly to create Python bindings of existing C++
@@ -47,6 +47,7 @@ Multi-Arch: foreign
 Section: doc
 Depends: ${misc:Depends},
          ${sphinxdoc:Depends}
+Built-Using: ${sphinxdoc:Built-Using}
 Description: documentation for pybind11
  pybind11 is a lightweight header library that exposes C++ types in
  Python and vice versa, mainly to create Python bindings of existing C++

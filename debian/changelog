@@ -2,8 +2,10 @@ pybind11 (2.0.1-1) unstable; urgency=medium
 
   * New upstream release
   * Use missing sphinxdoc:Built-Using substitution
+  * Fix clean filters to enable repeated builds.
+    Thanks to Giovani Ferreira for the review
 
- -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Fri, 06 Jan 2017 19:35:59 +0000
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Sat, 07 Jan 2017 17:36:51 +0000
 
 pybind11 (2.0.0-1) unstable; urgency=medium
 

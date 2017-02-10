@@ -1,1 +1,2 @@
 0001-Use-system-include-path.patch
+0002-Temporary-fix-for-the-gcc-6-LTO-regression.patch

@@ -1,15 +1,12 @@
 pybind11 (2.0.1-2) unstable; urgency=medium
 
-  * Fix FTBFS due to a regression in gcc-6 LTO handling
-    - New patch 0002-Temporary-fix-for-the-gcc-6-LTO-regression.patch
-    Thanks to Jason Rhinelander for the patch
   * Fix missing CMake package configuration in -dev package
-    - New patch 0003-Arch-indep-CMake-package-configuration.patch
+    - New patch 0002-Arch-indep-CMake-package-configuration.patch
     - Install the missing CMake package configuration
     - Use CMake to build the autopkgtest example tests
     Thanks to Jason Rhinelander for reporting (Closes: #854502)
 
- -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Sat, 11 Feb 2017 15:01:52 +0000
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 23 Feb 2017 13:16:46 +0000
 
 pybind11 (2.0.1-1) unstable; urgency=medium
 

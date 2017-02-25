@@ -1,15 +1,39 @@
-Test-Command: cp debian/tests/example/* $AUTOPKGTEST_TMP && cd $AUTOPKGTEST_TMP
- ; cmake . && make && python -c "import example; assert(example.add(1, 2) == 3)"
-Depends: cmake, g++ | c++-compiler, pybind11-dev, python-dev
+Test-Command: set -e
+ ; cp debian/tests/example/* "$AUTOPKGTEST_TMP"
+ ; for py in $(pyversions -r 2>/dev/null)
+ ; do cd "$AUTOPKGTEST_TMP"
+ ; echo "Testing with $py:"
+ ; cmake -DPYTHON_EXECUTABLE=/usr/bin/$py .
+ ; cmake --build .
+ ; $py -c "import example; assert(example.add(1, 2) == 3)"
+ ; done
+Depends: cmake, g++ | c++-compiler, pybind11-dev, python-all-dev
 Restrictions: allow-stderr
 
-Test-Command: cp debian/tests/example/* $AUTOPKGTEST_TMP && cd $AUTOPKGTEST_TMP
- ; cmake . && make && python3 -c "import example; assert(example.add(1, 2) == 3)"
-Depends: cmake, g++ | c++-compiler, pybind11-dev, python3-dev
+Test-Command: set -e
+ ; cp debian/tests/example/* "$AUTOPKGTEST_TMP"
+ ; for py in $(py3versions -r 2>/dev/null)
+ ; do cd "$AUTOPKGTEST_TMP"
+ ; echo "Testing with $py:"
+ ; cmake -DPYTHON_EXECUTABLE=/usr/bin/$py .
+ ; cmake --build .
+ ; $py -c "import example; assert(example.add(1, 2) == 3)"
+ ; done
+Depends: cmake, g++ | c++-compiler, pybind11-dev, python3-all-dev
 Restrictions: allow-stderr
 
-Test-Command: python -c "import pybind11; print pybind11.get_include()"
-Depends: python-pybind11
+Test-Command: set -e
+ ; for py in $(pyversions -r 2>/dev/null)
+ ; do cd "$AUTOPKGTEST_TMP"
+ ; echo "Testing with $py:"
+ ; $py -c "import pybind11; print(pybind11.get_include())"
+ ; done
+Depends: python-all, python-pybind11
 
-Test-Command: python3 -c "import pybind11; print(pybind11.get_include())"
-Depends: python3-pybind11
+Test-Command: set -e
+ ; for py in $(py3versions -r 2>/dev/null)
+ ; do cd "$AUTOPKGTEST_TMP"
+ ; echo "Testing with $py:"
+ ; $py -c "import pybind11; print(pybind11.get_include())"
+ ; done
+Depends: python3-all, python3-pybind11

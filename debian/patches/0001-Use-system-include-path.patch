@@ -1,4 +1,3 @@
-From c2010fb61826c45bdd0ee6f36c17d7bf84d8daaf Mon Sep 17 00:00:00 2001
 From: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Date: Fri, 23 Dec 2016 16:31:56 +0000
 Subject: Use system include path

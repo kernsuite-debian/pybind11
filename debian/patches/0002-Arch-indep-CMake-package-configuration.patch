@@ -7,10 +7,10 @@ Subject: Arch-indep CMake package configuration
  1 file changed, 3 insertions(+)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 341f845..4757ea4 100644
+index 16f1d67..ef41e72 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -117,9 +117,12 @@ if (PYBIND11_INSTALL)
+@@ -105,9 +105,12 @@ if (PYBIND11_INSTALL)
    configure_package_config_file(tools/${PROJECT_NAME}Config.cmake.in
                                  "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
                                  INSTALL_DESTINATION ${PYBIND11_CMAKECONFIG_INSTALL_DIR})

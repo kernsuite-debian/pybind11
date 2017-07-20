@@ -1,3 +1,2 @@
-docs/.build/
 pybind11.egg-info/
 tests/*.so

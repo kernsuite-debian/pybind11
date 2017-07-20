@@ -11,6 +11,9 @@ export PYBUILD_NAME = pybind11
 override_dh_auto_clean:
 	dh_auto_clean
 	dh_auto_clean --buildsystem=pybuild
+ifeq (,$(findstring nodoc,$(DEB_BUILD_PROFILES)))
+	$(MAKE) -C docs clean
+endif
 
 override_dh_auto_configure:
 ifeq (,$(findstring nocheck,$(DEB_BUILD_PROFILES)))
@@ -25,7 +28,7 @@ override_dh_auto_build:
 	dh_auto_build
 	dh_auto_build --buildsystem=pybuild
 ifeq (,$(findstring nodoc,$(DEB_BUILD_PROFILES)))
-	make -C docs html
+	$(MAKE) -C docs html
 endif
 
 override_dh_auto_install:

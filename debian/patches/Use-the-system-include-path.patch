@@ -1,6 +1,6 @@
 From: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Date: Fri, 23 Dec 2016 16:31:56 +0000
-Subject: Use system include path
+Subject: Use the system include path
 
 ---
  pybind11/__init__.py |  8 +-------

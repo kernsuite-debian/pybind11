@@ -3,10 +3,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE = 1
 
-ifeq (,$(findstring nocheck,$(DEB_BUILD_PROFILES)))
-	BUILD_OPTIONS = -DPYBIND11_TEST=ON
-else
-	BUILD_OPTIONS = -DPYBIND11_TEST=OFF
+BUILD_OPTIONS = -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/$(shell py3versions -d)
+ifneq (,$(findstring nocheck,$(DEB_BUILD_PROFILES)))
+BUILD_OPTIONS += -DPYBIND11_TEST:BOOL=OFF
 endif
 
 export PYBUILD_NAME = pybind11

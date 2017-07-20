@@ -1,3 +1,14 @@
+pybind11 (2.1.1-1) experimental; urgency=medium
+
+  * New upstream version 2.1.1
+  * Drop numbering of the patch queue
+  * Clean the docs using the upstream Makefile
+  * Refactor the management of configuration arguments
+  * Run tests for optional dependencies (eigen, numpy)
+  * Bump standards version to 4.0.0, no changes required
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 20 Jul 2017 16:42:31 +0100
+
 pybind11 (2.1.0-1) experimental; urgency=medium
 
   * Switch from git-dpm to gbp

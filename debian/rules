@@ -1,19 +1,19 @@
 #!/usr/bin/make -f
 
 # Uncomment this to turn on verbose mode.
-#export DH_VERBOSE = 1
+#export DH_VERBOSE=1
 
 # Prevent install of headers by setup.py.
 export PYBIND11_USE_CMAKE=1
 
-export PYBUILD_NAME = pybind11
+export PYBUILD_NAME=pybind11
 
-CONFIGURE_ARGS = -DPYBIND11_INSTALL:BOOL=ON
+CONFIGURE_ARGS=-DPYBIND11_INSTALL:BOOL=ON
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-CONFIGURE_ARGS += -DPYBIND11_TEST:BOOL=ON \
+CONFIGURE_ARGS+=-DPYBIND11_TEST:BOOL=ON \
 	-DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/$(shell py3versions -d)
 else
-CONFIGURE_ARGS += -DPYBIND11_TEST:BOOL=OFF
+CONFIGURE_ARGS+=-DPYBIND11_TEST:BOOL=OFF
 endif
 
 %:

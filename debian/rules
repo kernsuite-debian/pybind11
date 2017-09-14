@@ -45,3 +45,6 @@ override_dh_auto_install:
 
 override_dh_installchangelogs:
 	dh_installchangelogs docs/changelog.rst
+
+get-orig-source:
+	uscan --download-current-version --force-download --no-symlink

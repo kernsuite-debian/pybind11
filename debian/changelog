@@ -1,3 +1,22 @@
+pybind11 (2.2.1-1) experimental; urgency=medium
+
+  * New upstream version 2.2.1
+  * Drop the patch queue, no longer required
+  * Prevent multiple install of headers
+  * Add new test dependency on Boost
+  * Test query of includes via pybind11
+  * Add recommended get-orig-source target
+  * Fixup the nocheck and nodoc guards
+    - Replace occurrences of findstring with filter
+    - Use DEB_BUILD_OPTIONS instead of DEB_BUILD_PROFILES
+  * Fixup whitespacing in rules file
+  * Drop superfluous dependency on python-pytest
+  * Filter egg-info directory with extend-diff-ignore
+  * Fixup the Vcs-Browser URI
+  * Bump the standards version to 4.1.0
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 14 Sep 2017 11:58:23 +0100
+
 pybind11 (2.1.1-1) experimental; urgency=medium
 
   * New upstream version 2.1.1

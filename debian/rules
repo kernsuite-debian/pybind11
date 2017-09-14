@@ -3,6 +3,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE = 1
 
+# Prevent install of headers by setup.py.
+export PYBIND11_USE_CMAKE=1
+
 export PYBUILD_NAME = pybind11
 
 CONFIGURE_ARGS = -DPYBIND11_INSTALL:BOOL=ON

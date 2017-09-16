@@ -14,8 +14,10 @@ pybind11 (2.2.1-1) experimental; urgency=medium
   * Filter egg-info directory with extend-diff-ignore
   * Fixup the Vcs-Browser URI
   * Bump the standards version to 4.1.0
+  * Update copyright information and dates.
+    Thanks to Herbert Fortes for reviewing
 
- -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 14 Sep 2017 11:58:23 +0100
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Sat, 16 Sep 2017 17:40:27 +0100
 
 pybind11 (2.1.1-1) experimental; urgency=medium
 

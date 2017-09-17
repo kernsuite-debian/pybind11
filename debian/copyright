@@ -12,6 +12,7 @@ Copyright: 2016-2017 Ghislain Antony Vaillant <ghisvail@gmail.com>
 License: BSD-3-Clause
 
 Files: include/pybind11/chrono.h
+ tests/test_chrono.cpp
 Copyright: 2016 Trent Houliston <trent@houliston.me> and Wenzel Jakob <wenzel.jakob@epfl.ch>
 License: BSD-3-Clause+CLA
 
@@ -20,11 +21,43 @@ Copyright: 2016 Klemens Morgenstern <klemens.morgenstern@ed-chemnitz.de> and Wen
 License: BSD-3-Clause+CLA
 
 Files: include/pybind11/iostream.h
+ tests/test_iostream.cpp
 Copyright: 2017 Henry F. Schreiner
 License: BSD-3-Clause+CLA
 
 Files: include/pybind11/stl_bind.h
 Copyright: 2016 Sergey Lyskov and Wenzel Jakob
+License: BSD-3-Clause+CLA
+
+Files: tests/constructor_stats.h
+Copyright: 2016 Jason Rhinelander <jason@imaginary.ca>
+License: BSD-3-Clause+CLA
+
+Files: tests/pybind11_cross_module_tests.cpp
+ tests/test_factory_constructors.cpp
+ tests/test_local_bindings.cpp
+Copyright: 2017 Jason Rhinelander <jason@imaginary.ca>
+License: BSD-3-Clause+CLA
+
+Files: tests/test_copy_move.cpp
+Copyright: 2016 Ben North <ben@redfrontdoor.org>
+License: BSD-3-Clause+CLA
+
+Files: tests/test_eval.cpp
+Copyright: 2016 Klemens D. Morgenstern
+License: BSD-3-Clause+CLA
+
+Files: tests/test_exceptions.cpp
+Copyright: 2016 Pim Schellart <P.Schellart@princeton.edu>
+License: BSD-3-Clause+CLA
+
+Files: tests/test_numpy_array.cpp
+ tests/test_numpy_dtypes.cpp
+Copyright: 2016 Ivan Smirnov <i.s.smirnov@gmail.com>
+License: BSD-3-Clause+CLA
+
+Files: tests/test_stl_binders.cpp
+Copyright: 2016 Sergey Lyskov
 License: BSD-3-Clause+CLA
 
 Files: tools/FindEigen3.cmake

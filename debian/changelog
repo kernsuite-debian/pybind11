@@ -1,3 +1,14 @@
+pybind11 (2.2.2-1) experimental; urgency=medium
+
+  * New upstream version 2.2.2
+  * Upgrade watch file to version 4
+  * Move Eigen and add Numpy to Recommends
+  * Point the VCS URIs to salsa.debian.org
+  * Bump the debhelper version to 11
+  * Bump the standards version to 4.1.3
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 15 Feb 2018 11:34:31 +0000
+
 pybind11 (2.2.1-1) experimental; urgency=medium
 
   * New upstream version 2.2.1

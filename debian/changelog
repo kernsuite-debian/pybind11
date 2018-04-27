@@ -1,9 +1,10 @@
-pybind11 (2.2.2-2) UNRELEASED; urgency=medium
+pybind11 (2.2.2-2) unstable; urgency=medium
 
   * Team upload.
+  * Upload to unstable. Closes: #890364.
   * Standards-Version: 4.1.4
 
- -- Drew Parsons <dparsons@debian.org>  Fri, 27 Apr 2018 11:29:10 +0800
+ -- Drew Parsons <dparsons@debian.org>  Fri, 27 Apr 2018 11:29:49 +0800
 
 pybind11 (2.2.2-1) experimental; urgency=medium
 

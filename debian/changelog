@@ -1,3 +1,10 @@
+pybind11 (2.2.4-1) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * New upstream version.
+
+ -- Drew Parsons <dparsons@debian.org>  Sat, 22 Sep 2018 10:22:21 +0800
+
 pybind11 (2.2.3-1) unstable; urgency=medium
 
   * Team upload.

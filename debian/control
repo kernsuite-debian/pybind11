@@ -25,8 +25,6 @@ Standards-Version: 4.2.1
 Vcs-Browser: https://salsa.debian.org/science-team/pybind11
 Vcs-Git: https://salsa.debian.org/science-team/pybind11.git
 Homepage: https://github.com/pybind/pybind11
-X-Python-Version: >= 2.7
-X-Python3-Version: >= 3.2
 
 Package: pybind11-dev
 Architecture: all

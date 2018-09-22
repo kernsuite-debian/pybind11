@@ -3,6 +3,8 @@ pybind11 (2.2.4-1) UNRELEASED; urgency=medium
   * Team upload.
   * New upstream version.
   * Standards-Version: 4.2.1
+  * debian/control: remove ancient-python-version-field
+    X-Python-Version, X-Python3-Version
 
  -- Drew Parsons <dparsons@debian.org>  Sat, 22 Sep 2018 10:22:21 +0800
 

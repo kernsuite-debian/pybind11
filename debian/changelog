@@ -1,4 +1,4 @@
-pybind11 (2.2.4-2) UNRELEASED; urgency=medium
+pybind11 (2.2.4-2) unstable; urgency=medium
 
   * Team upload.
   * add debian patch ignore_bogus_numpy_ABI_warning.patch to ignore
@@ -10,7 +10,7 @@ pybind11 (2.2.4-2) UNRELEASED; urgency=medium
     https://github.com/scipy/scipy/issues/3863
     Closes: #917722.
 
- -- Drew Parsons <dparsons@debian.org>  Sun, 06 Jan 2019 09:49:09 +0100
+ -- Drew Parsons <dparsons@debian.org>  Sun, 06 Jan 2019 09:58:56 +0100
 
 pybind11 (2.2.4-1) unstable; urgency=medium
 

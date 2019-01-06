@@ -1,3 +1,17 @@
+pybind11 (2.2.4-2) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * add debian patch ignore_bogus_numpy_ABI_warning.patch to ignore
+    "RuntimeWarning: numpy.ufunc size changed, may indicate binary
+    incompatibility" during pytest runs, as already done for
+    numpy.dtype. Triggered by numpy upgrades when scipy is not built
+    against the new numpy, not considered harmful. See discussions at
+    https://github.com/numpy/numpy/pull/432
+    https://github.com/scipy/scipy/issues/3863
+    Closes: #917722.
+
+ -- Drew Parsons <dparsons@debian.org>  Sun, 06 Jan 2019 09:49:09 +0100
+
 pybind11 (2.2.4-1) unstable; urgency=medium
 
   * Team upload.

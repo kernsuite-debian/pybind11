@@ -3,8 +3,8 @@ Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.
 Uploaders: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Section: libs
 Priority: optional
-Build-Depends: cmake (>= 2.8.12),
-               debhelper (>= 11),
+Build-Depends: debhelper-compat (= 12),
+               cmake (>= 2.8.12),
                dpkg-dev (>= 1.17.14),
                dh-python,
                libboost-dev (>= 1.56) <!nocheck>,

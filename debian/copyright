@@ -4,7 +4,7 @@ Upstream-Contact: Wenzel Jakob <wenzel.jakob@epfl.ch>
 Source: https://github.com/pybind/pybind11
 
 Files: *
-Copyright: 2016-2017 Wenzel Jakob <wenzel.jakob@epfl.ch>
+Copyright: 2016-2019 Wenzel Jakob <wenzel.jakob@epfl.ch>
 License: BSD-3-Clause+CLA
 
 Files: debian/*

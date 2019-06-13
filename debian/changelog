@@ -2,6 +2,7 @@ pybind11 (2.3.0-1exp1) UNRELEASED; urgency=medium
 
   * Team upload.
   * New upstream release.
+    - applies patch ignore_bogus_numpy_ABI_warning.patch
   * Standards-Version: 4.3.0
   * debhelper compatibility level 12
     Build-Depends: debhelper-compat (= 12)

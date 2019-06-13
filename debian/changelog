@@ -2,6 +2,7 @@ pybind11 (2.3.0-1exp1) UNRELEASED; urgency=medium
 
   * Team upload.
   * New upstream release.
+  * Standards-Version: 4.3.0
 
  -- Drew Parsons <dparsons@debian.org>  Thu, 13 Jun 2019 20:58:54 +1000
 

@@ -1,4 +1,4 @@
-pybind11 (2.3.0-1exp1) UNRELEASED; urgency=medium
+pybind11 (2.3.0-1exp1) experimental; urgency=medium
 
   * Team upload.
   * New upstream release.
@@ -7,7 +7,7 @@ pybind11 (2.3.0-1exp1) UNRELEASED; urgency=medium
   * debhelper compatibility level 12
     Build-Depends: debhelper-compat (= 12)
 
- -- Drew Parsons <dparsons@debian.org>  Thu, 13 Jun 2019 20:58:54 +1000
+ -- Drew Parsons <dparsons@debian.org>  Thu, 13 Jun 2019 21:12:54 +1000
 
 pybind11 (2.2.4-2) unstable; urgency=medium
 

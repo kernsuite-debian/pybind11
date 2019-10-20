@@ -2,6 +2,7 @@ pybind11 (2.4.3-1) UNRELEASED; urgency=medium
 
   * Team upload.
   * New upstream release.
+  * Standards-Version: 4.4.1
 
  -- Drew Parsons <dparsons@debian.org>  Sun, 20 Oct 2019 11:57:08 +0800
 

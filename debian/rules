@@ -17,7 +17,7 @@ CONFIGURE_ARGS+=-DPYBIND11_TEST:BOOL=OFF
 endif
 
 %:
-	dh $@ --with python2,python3,sphinxdoc --buildsystem=cmake
+	dh $@ --with python3,sphinxdoc --buildsystem=cmake
 
 override_dh_auto_clean:
 	dh_auto_clean

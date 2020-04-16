@@ -2,6 +2,7 @@ pybind11 (2.5.0-1) UNRELEASED; urgency=medium
 
   * Team upload.
   * New upstream release.
+  * add pybind11 tests to debian/tests with pytest-3
   * Standards-Version: 4.5.0
 
  -- Drew Parsons <dparsons@debian.org>  Thu, 16 Apr 2020 22:12:45 +0800

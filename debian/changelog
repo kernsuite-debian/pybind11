@@ -2,6 +2,8 @@ pybind11 (2.5.0-1) UNRELEASED; urgency=medium
 
   * Team upload.
   * New upstream release.
+  * update API in debian test example:
+    use PYBIND11_MODULE instead of deprecated PYBIND11_PLUGIN
   * add pybind11 tests to debian/tests with pytest-3
   * Standards-Version: 4.5.0
 

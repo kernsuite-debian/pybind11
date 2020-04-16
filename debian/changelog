@@ -1,4 +1,4 @@
-pybind11 (2.5.0-1) UNRELEASED; urgency=medium
+pybind11 (2.5.0-1) experimental; urgency=medium
 
   * Team upload.
   * New upstream release.
@@ -7,7 +7,7 @@ pybind11 (2.5.0-1) UNRELEASED; urgency=medium
   * add pybind11 tests to debian/tests with pytest-3
   * Standards-Version: 4.5.0
 
- -- Drew Parsons <dparsons@debian.org>  Thu, 16 Apr 2020 22:12:45 +0800
+ -- Drew Parsons <dparsons@debian.org>  Thu, 16 Apr 2020 23:37:30 +0800
 
 pybind11 (2.4.3-2) unstable; urgency=medium
 

@@ -39,4 +39,8 @@ Test-Command: set -e
 Depends: python3-all,
  python3-pybind11,
  python3-pytest,
- cmake
+ python3-numpy,
+ python3-scipy,
+ cmake,
+ libboost-dev,
+ libeigen3-dev

@@ -42,5 +42,6 @@ Depends: python3-all,
  python3-numpy,
  python3-scipy,
  cmake,
+ g++,
  libboost-dev,
  libeigen3-dev

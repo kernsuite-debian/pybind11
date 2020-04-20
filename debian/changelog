@@ -1,8 +1,9 @@
-pybind11 (2.5.0-3) UNRELEASED; urgency=medium
+pybind11 (2.5.0-3) unstable; urgency=medium
 
+  * Team upload.
   * specify compiler (g++) for pybind11 (pytest) tests in debian/tests
 
- -- Drew Parsons <dparsons@debian.org>  Mon, 20 Apr 2020 10:55:22 +0800
+ -- Drew Parsons <dparsons@debian.org>  Mon, 20 Apr 2020 10:56:44 +0800
 
 pybind11 (2.5.0-2) unstable; urgency=medium
 

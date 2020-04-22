@@ -36,7 +36,7 @@ Test-Command: set -e
  ; cmake .
  ; make
  ; pytest-3
-Depends: python3-all,
+Depends: python3-all-dev,
  python3-pybind11,
  python3-pytest,
  python3-numpy,

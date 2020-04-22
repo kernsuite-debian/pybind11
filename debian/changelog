@@ -1,3 +1,10 @@
+pybind11 (2.5.0-4) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * debian/tests pybind11 tests (pytest) Depends: python3-all-dev
+
+ -- Drew Parsons <dparsons@debian.org>  Wed, 22 Apr 2020 12:06:08 +0800
+
 pybind11 (2.5.0-3) unstable; urgency=medium
 
   * Team upload.

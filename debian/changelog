@@ -1,3 +1,11 @@
+pybind11 (2.5.0-5) UNRELEASED; urgency=medium
+
+  * debian patch docs_skip_pytypes.patch skips building pytypes docs
+    in order to build with sphinx 3.2.1. See upstream Issue #2404.
+    Closes: #963659.
+
+ -- Drew Parsons <dparsons@debian.org>  Fri, 28 Aug 2020 10:49:42 +0800
+
 pybind11 (2.5.0-4) unstable; urgency=medium
 
   * Team upload.

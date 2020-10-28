@@ -1,1 +1,2 @@
 docs_skip_pytypes.patch
+skip_sphinxcontrib_doc.patch

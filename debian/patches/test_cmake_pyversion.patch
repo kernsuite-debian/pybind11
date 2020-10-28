@@ -1,0 +1,15 @@
+Index: pybind11/tests/CMakeLists.txt
+===================================================================
+--- pybind11.orig/tests/CMakeLists.txt	2020-10-29 01:11:50.551219364 +0800
++++ pybind11/tests/CMakeLists.txt	2020-10-29 02:21:06.204965941 +0800
+@@ -61,6 +61,10 @@
+     ""
+     CACHE STRING "Tests from ;-separated list of *.cpp files will be removed from all tests")
+ 
++if(DEFINED PYVERSION)
++  find_package(Python ${PYVERSION} EXACT COMPONENTS Interpreter Development)
++endif()
++
+ if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
+   # We're being loaded directly, i.e. not via add_subdirectory, so make this
+   # work as its own project and load the pybind11Config to get the tools we need

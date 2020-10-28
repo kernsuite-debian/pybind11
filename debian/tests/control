@@ -31,11 +31,15 @@ Test-Command: set -e
 Depends: python3-all, python3-pybind11
 
 Test-Command: set -e
- ; cp -r tests ${AUTOPKGTEST_TMP}
- ; cd ${AUTOPKGTEST_TMP}/tests
- ; cmake .
+ ; SRCDIR=$PWD
+ ; for py in $(py3versions -rv 2>/dev/null)
+ ; do cp -r tests ${AUTOPKGTEST_TMP}/tests-python$py
+ ; cd ${AUTOPKGTEST_TMP}/tests-python$py
+ ; cmake -DPYVERSION=$py .
  ; make
- ; pytest-3
+ ; python$py -m pytest
+ ; cd $SRCDIR
+ ; done
 Depends: python3-all-dev,
  python3-pybind11,
  python3-pytest,

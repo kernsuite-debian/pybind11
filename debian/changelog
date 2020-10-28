@@ -2,9 +2,13 @@ pybind11 (2.6.0-1exp1) UNRELEASED; urgency=medium
 
   * Team upload.
   * New upstream release.
-  * debian patch skip_sphinxcontrib_doc.patch removes sphinxcontrib
-    modules rsvgconverter and moderncmakedomain for doc build, since
-    they are not yet packaged.
+  * add debian patches
+    - skip_sphinxcontrib_doc.patch removes sphinxcontrib
+      modules rsvgconverter and moderncmakedomain for doc build, since
+      they are not yet packaged.
+    - test_cmake_pyversion.patch configures ./tests for specific python
+      version if PYVERSION is defined for cmake.
+      Applied in debian/tests. Closes: #973012, #973295.
 
  -- Drew Parsons <dparsons@debian.org>  Thu, 29 Oct 2020 01:11:52 +0800
 

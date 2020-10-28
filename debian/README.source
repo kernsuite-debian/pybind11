@@ -1,0 +1,12 @@
+debian/images
+-------------
+
+To avoid privacy breaches, badge image files in docs have been predownloaded
+and stored in debian/images, for installation in html/_images.
+
+pybind11-logo.png                   https://github.com/pybind/pybind11/raw/master/docs/pybind11-logo.png
+build_passing_riaj54pn4h08xy40.svg  https://ci.appveyor.com/api/projects/status/riaj54pn4h08xy40?svg=true
+badge.svg                           https://github.com/pybind/pybind11/workflows/ci/badge.svg
+gitter.svg                          https://img.shields.io/gitter/room/gitterhq/gitter.svg
+docspassing.svg                     https://readthedocs.org/projects/pybind11/badge?version=latest
+docs-stable.svg                     https://img.shields.io/badge/docs-stable-blue

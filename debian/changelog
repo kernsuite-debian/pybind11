@@ -9,6 +9,8 @@ pybind11 (2.6.0-1exp1) UNRELEASED; urgency=medium
     - test_cmake_pyversion.patch configures ./tests for specific python
       version if PYVERSION is defined for cmake.
       Applied in debian/tests. Closes: #973012, #973295.
+  * To avoid privacy breaches, predownload badge image files in docs,
+    store in debian/images and install in html/_images.
 
  -- Drew Parsons <dparsons@debian.org>  Thu, 29 Oct 2020 01:11:52 +0800
 

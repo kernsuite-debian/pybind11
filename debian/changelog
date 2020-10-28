@@ -1,4 +1,4 @@
-pybind11 (2.6.0-1exp1) UNRELEASED; urgency=medium
+pybind11 (2.6.0-1) unstable; urgency=medium
 
   * Team upload.
   * New upstream release.
@@ -12,7 +12,7 @@ pybind11 (2.6.0-1exp1) UNRELEASED; urgency=medium
   * To avoid privacy breaches, predownload badge image files in docs,
     store in debian/images and install in html/_images.
 
- -- Drew Parsons <dparsons@debian.org>  Thu, 29 Oct 2020 01:11:52 +0800
+ -- Drew Parsons <dparsons@debian.org>  Thu, 29 Oct 2020 03:44:25 +0800
 
 pybind11 (2.5.0-5) unstable; urgency=medium
 

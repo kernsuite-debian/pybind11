@@ -1,11 +1,14 @@
 Index: pybind11/tests/CMakeLists.txt
 ===================================================================
---- pybind11.orig/tests/CMakeLists.txt	2020-11-06 17:15:05.331222406 +0800
-+++ pybind11/tests/CMakeLists.txt	2020-11-06 17:15:47.551512934 +0800
-@@ -39,6 +39,10 @@
+--- pybind11.orig/tests/CMakeLists.txt	2020-11-06 18:02:56.576669378 +0800
++++ pybind11/tests/CMakeLists.txt	2020-11-06 18:06:36.018023377 +0800
+@@ -39,15 +39,19 @@
    endif()
  endmacro()
  
++# There's no harm in including a project in a project
++project(pybind11_tests CXX)
++
 +if(DEFINED PYVERSION)
 +  find_package(Python ${PYVERSION} EXACT COMPONENTS Interpreter Development)
 +endif()
@@ -13,3 +16,12 @@ Index: pybind11/tests/CMakeLists.txt
  # New Python support
  if(DEFINED Python_EXECUTABLE)
    set(PYTHON_EXECUTABLE "${Python_EXECUTABLE}")
+   set(PYTHON_VERSION "${Python_VERSION}")
+ endif()
+ 
+-# There's no harm in including a project in a project
+-project(pybind11_tests CXX)
+-
+ # Access FindCatch and more
+ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../tools")
+ 

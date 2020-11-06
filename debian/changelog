@@ -1,3 +1,12 @@
+pybind11 (2.6.0-2) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * update debian patch test_cmake_pyversion.patch to process
+    PYVERSION to find python before using PYTHON_VERSION.
+    Otherwise test_async is skipped. Closes: #973794.
+
+ -- Drew Parsons <dparsons@debian.org>  Fri, 06 Nov 2020 17:17:25 +0800
+
 pybind11 (2.6.0-1) unstable; urgency=medium
 
   * Team upload.

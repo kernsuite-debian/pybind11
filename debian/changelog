@@ -1,10 +1,10 @@
-pybind11 (2.6.1-1) UNRELEASED; urgency=medium
+pybind11 (2.6.1-1) unstable; urgency=medium
 
   * Team upload.
   * New upstream release.
   * Standards-Version: 4.5.1
 
- -- Drew Parsons <dparsons@debian.org>  Thu, 19 Nov 2020 01:25:57 +0800
+ -- Drew Parsons <dparsons@debian.org>  Thu, 19 Nov 2020 01:28:13 +0800
 
 pybind11 (2.6.0-2) unstable; urgency=medium
 

@@ -1,9 +1,9 @@
 Index: pybind11/tests/CMakeLists.txt
 ===================================================================
---- pybind11.orig/tests/CMakeLists.txt	2020-11-06 18:02:56.576669378 +0800
-+++ pybind11/tests/CMakeLists.txt	2020-11-06 18:06:36.018023377 +0800
-@@ -39,15 +39,19 @@
-   endif()
+--- pybind11.orig/tests/CMakeLists.txt	2021-01-30 17:11:34.849003057 +0100
++++ pybind11/tests/CMakeLists.txt	2021-01-30 17:11:34.841003034 +0100
+@@ -47,15 +47,19 @@
+   endforeach()
  endmacro()
  
 +# There's no harm in including a project in a project

@@ -4,11 +4,12 @@ Uploaders: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Section: libs
 Priority: optional
 Build-Depends: debhelper-compat (= 13),
-               cmake (>= 2.8.12),
+               cmake (>= 3.18~),
                dpkg-dev (>= 1.17.14),
                dh-python,
                libboost-dev (>= 1.56) <!nocheck>,
                libeigen3-dev <!nocheck>,
+               ninja-build,
                python3-all,
                python3-breathe <!nodoc>,
                python3-dev <!nocheck>,
@@ -18,6 +19,7 @@ Build-Depends: debhelper-compat (= 13),
                python3-setuptools,
                python3-sphinx <!nodoc>,
                python3-sphinx-rtd-theme <!nodoc>,
+               python3-wheel,
                sphinx-common
 Standards-Version: 4.5.1
 Vcs-Browser: https://salsa.debian.org/science-team/pybind11

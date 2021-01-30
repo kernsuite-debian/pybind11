@@ -3,6 +3,8 @@ pybind11 (2.6.2-1) UNRELEASED; urgency=medium
   * Team upload.
   * New upstream release.
     - Build-Depends: cmake (>= 3.18~), ninja-build, python3-wheel
+  * refresh predownloaded debian/images for privacy protection using
+    debian/get_images.sh
 
  -- Drew Parsons <dparsons@debian.org>  Sat, 30 Jan 2021 17:05:04 +0100
 

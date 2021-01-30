@@ -55,6 +55,10 @@ override_dh_installdocs:
 	sed "s|src=\"https://img.shields.io/gitter/room/gitterHQ/gitter.svg|src=\"_images/gitter.svg|g" -i debian/pybind11-doc/usr/share/doc/pybind11-doc/html/*.html
 	sed "s|src=\"https://readthedocs.org/projects/pybind11/badge?version=latest|src=\"_images/docspassing.svg|g" -i debian/pybind11-doc/usr/share/doc/pybind11-doc/html/*.html
 	sed "s|src=\"https://img.shields.io/badge/docs-stable-blue|src=\"_images/docs-stable.svg|g" -i debian/pybind11-doc/usr/share/doc/pybind11-doc/html/*.html
+	sed "s|src=\"https://img.shields.io/conda/vn/conda-forge/pybind11.svg|src=\"_images/pybind11_conda.svg|g" -i debian/pybind11-doc/usr/share/doc/pybind11-doc/html/*.html
+	sed "s|src=\"https://img.shields.io/pypi/v/pybind11.svg|src=\"_images/pybind11_pypi.svg|g" -i debian/pybind11-doc/usr/share/doc/pybind11-doc/html/*.html
+	sed "s|src=\"https://img.shields.io/pypi/pyversions/pybind11.svg|src=\"_images/pybind11_pyversions.svg|g" -i debian/pybind11-doc/usr/share/doc/pybind11-doc/html/*.html
+	sed "s|src=\"https://repology.org/badge/latest-versions/python:pybind11.svg|src=\"_images/pybind11_lastest.svg|g" -i debian/pybind11-doc/usr/share/doc/pybind11-doc/html/*.html
 
 get-orig-source:
 	uscan --download-current-version --force-download --no-symlink
